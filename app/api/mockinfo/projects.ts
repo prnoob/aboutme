@@ -2,26 +2,17 @@ export default {
     title: 'Projects',
     data: [
         {
-            name: 'AI Web',
-            tags: ['AI', 'Frontend', 'Website'],
+            name: 'Live Chatting Room',
+            tags: ['GO(gin)', 'React', 'MySQL', 'Redis', 'Docker'],
             descriptions: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.',
+                'Developed an online chat room with real-time communication, enabling multiple users to chat simultaneously. It also includes user account features such as registration and login.',
             ],
         },
         {
-            name: "This is a very long title, normally it should not be too long, it juest a project title, let's hide the overflow text and give some layout",
-            tags: ['Design', 'UI/UX', 'Website'],
+            name: 'Pac Man Map Editor and Tester',
+            tags: ['JAVA', '2d game', 'school course project', 'OOP'],
             descriptions: [
-                "a fun and playful design that's perfect for showcasing your creativity and personality online! With its bright colors, whimsical graphics, and charming typography, this template is sure to catch the eye of anyone who visits your website. Whether you're a blogger, artist, or small business owner, the Silly Girl template is a great choice for expressing your unique style and making a memorable impression on your audience. So why not add a touch of fun to your online presence with the Silly Girl template today!",
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.',
-            ],
-        },
-        {
-            name: 'Site Design',
-            tags: ['Design', 'UI/UX', 'Website'],
-            descriptions: [
-                "a fun and playful design that's perfect for showcasing your creativity and personality online! With its bright colors, whimsical graphics, and charming typography, this template is sure to catch the eye of anyone who visits your website. Whether you're a blogger, artist, or small business owner, the Silly Girl template is a great choice for expressing your unique style and making a memorable impression on your audience. So why not add a touch of fun to your online presence with the Silly Girl template today!",
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.',
+                'Implemented the classic game Pac-Man with added features for map editing and automated verification for custom game modes.',
             ],
         },
     ],

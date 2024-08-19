@@ -1,33 +1,27 @@
 export default {
-    title: 'Works',
+    title: 'Photography',
     data: [
         {
-            banner: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
-            title: 'Intersection of AI and Web Development',
+            banner: './commonicons/Alaska_Nero AI_image_denoiser.jpeg',
+            title: 'Remote Alaskan Wilderness',
             descriptions:
-                'To help you better grasp these concepts and technologies, we also provide some practical examples. These examples can help you better understand how to use these APIs and gain more inspiration and ideas from them.\n\
-            We are committed to making AI technology more popular and easy to use, and hope that our website can provide you with valuable help. If you have any questions or suggestions, please feel free to contact us.',
-            link: 'https://viku.org/',
+                'Filmed at the end of my exchange program, I traveled to Fairbanks, Alaska, to fulfill my dream of seeing the Aurora',
         },
         {
-            banner: './misc/grayback.svg',
-            title: 'Visionary Innovation Knowledge Universe',
-            descriptions:
-                'This website is mainly a document that introduces how to use various AI APIs and the concepts of various parameters, and provides several practical examples.\n\
-            Our website includes introductions to various AI APIs, including speech recognition, image recognition, natural language processing, and more. Our introductions not only tell you how to use these APIs, but also explain the concepts of various parameters so that you can better understand how the APIs work.\n\
-            To help you better grasp these concepts and technologies, we also provide some practical examples. These examples can help you better understand how to use these APIs and gain more inspiration and ideas from them.\n\
-            We are committed to making AI technology more popular and easy to use, and hope that our website can provide you with valuable help. If you have any questions or suggestions, please feel free to contact us.',
-            link: 'https://aiweb.viku.org/',
+            banner: './commonicons/HangzhouWestLake.JPG',
+            title: 'Mandarin Duck in HangZhou WestLake',
+            descriptions: 'Filmed in my hometown of Hangzhou during spring, featuring the renowned West Lake.',
         },
         {
-            banner: 'https://images.unsplash.com/photo-1689850543263-01a52ccc6943',
-            title: 'Visionary Innovation Knowledge Universe',
+            banner: './commonicons/WallStreetSelfie.JPG',
+            title: 'Wall Street Charging Bull',
             descriptions:
-                'This website is mainly a document that introduces how to use various AI APIs and the concepts of various parameters, and provides several practical examples.\n\
-            Our website includes introductions to various AI APIs, including speech recognition, image recognition, natural language processing, and more. Our introductions not only tell you how to use these APIs, but also explain the concepts of various parameters so that you can better understand how the APIs work.\n\
-            To help you better grasp these concepts and technologies, we also provide some practical examples. These examples can help you better understand how to use these APIs and gain more inspiration and ideas from them.\n\
-            We are committed to making AI technology more popular and easy to use, and hope that our website can provide you with valuable help. If you have any questions or suggestions, please feel free to contact us.',
-            link: 'https://aiweb.viku.org/',
+                'This photo was taken next to the famous Charging Bull on Wall Street, where a long line of people were waiting to touch its testicles.',
+        },
+        {
+            banner: './commonicons/Seattle.JPG',
+            title: 'Snow Mountain in Seatle',
+            descriptions: 'Taken in Seattle with new friends I met in Alaska.',
         },
     ],
     status: 0,
