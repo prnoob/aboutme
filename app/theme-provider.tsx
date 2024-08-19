@@ -15,7 +15,9 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
 
     return (
         <Suspense fallback={<div>Loading...</div>}>
-            <ThemeProviderContent dark={dark} setDark={setDark} children={children} />
+            <ThemeProviderContent dark={dark} setDark={setDark}>
+                {children}
+            </ThemeProviderContent>
         </Suspense>
     )
 }
