@@ -6,22 +6,26 @@ export default {
             title: 'Remote Alaskan Wilderness',
             descriptions:
                 'Filmed at the end of my exchange program, I traveled to Fairbanks, Alaska, to fulfill my dream of seeing the Aurora',
+            link: '',
         },
         {
             banner: './commonicons/HangzhouWestLake.JPG',
             title: 'Mandarin Duck in HangZhou WestLake',
             descriptions: 'Filmed in my hometown of Hangzhou during spring, featuring the renowned West Lake.',
+            link: '',
         },
         {
             banner: './commonicons/WallStreetSelfie.JPG',
             title: 'Wall Street Charging Bull',
             descriptions:
                 'This photo was taken next to the famous Charging Bull on Wall Street, where a long line of people were waiting to touch its testicles.',
+            link: '',
         },
         {
             banner: './commonicons/Seattle.JPG',
             title: 'Snow Mountain in Seatle',
             descriptions: 'Taken in Seattle with new friends I met in Alaska.',
+            link: '',
         },
     ],
     status: 0,
