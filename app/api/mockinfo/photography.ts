@@ -18,7 +18,7 @@ export default {
             title: 'Melbourne',
         },
         {
-            photo: './photos/alaska_ice_mountain.JPG',
+            photo: './photos/alaska_ice_mountain.jpg',
             title: 'Alaska',
         },
         {
