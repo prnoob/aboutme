@@ -6,14 +6,6 @@ export default {
             title: 'Alaskan',
         },
         {
-            photo: './photos/HangzhouWestLake.JPG',
-            title: 'Hangzhou',
-        },
-        {
-            photo: './photos/WallStreetSelfie.JPG',
-            title: 'NewYok',
-        },
-        {
             photo: './photos/Melbourne.JPG',
             title: 'Melbourne',
         },
@@ -22,12 +14,20 @@ export default {
             title: 'Alaska',
         },
         {
+            photo: './photos/HangzhouWestLake.JPG',
+            title: 'Hangzhou',
+        },
+        {
             photo: './photos/black_pin.JPG',
             title: 'Boston',
         },
         {
             photo: './photos/dockland.JPG',
             title: 'Dockland',
+        },
+        {
+            photo: './photos/WallStreetSelfie.JPG',
+            title: 'NewYok',
         },
         {
             photo: './photos/Mornington.JPG',
