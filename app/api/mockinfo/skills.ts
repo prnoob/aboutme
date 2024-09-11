@@ -23,7 +23,7 @@ export default {
             category: 'Familiar', // 了解
             logo: './misc/familiar.svg',
             style: 'gray',
-            list: ['React', 'kereas', 'JavaScript', 'Django', 'Grpc'],
+            list: ['React', 'kereas', 'JavaScript', 'Django', 'Grpc', 'Kubernets'],
         },
     ],
     status: 0,

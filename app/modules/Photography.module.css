@@ -1,0 +1,8 @@
+.galleryScroll {
+  display: flex;
+  transition: transform 0.1s linear;
+}
+
+.galleryItemTitle {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}

@@ -2,10 +2,10 @@ export default {
     data: {
         basicInfo: {
             name: 'Ziang(David) Zhou',
-            career: 'Full-Stack Developer',
+            career: 'Full-Stack Software Engineer',
             avatar: './user/avatar.jpg', // 头像
             snapshot: './user/MelbourneModifiedSelfie.jpg', // 生活照
-            bio: 'A programmer by trade, \n a photographer by passion.',
+            bio: 'Beyond code, \ndelivering reliable and impactful \ntechnology solutions',
         },
         contactInfo: {
             email: 'zianzhou@student.unimelb.edu.au',
