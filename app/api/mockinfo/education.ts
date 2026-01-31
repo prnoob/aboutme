@@ -10,6 +10,7 @@ export default {
             graduationDate: undefined,
             degree: 'Honor',
             major: 'Architectural Design',
+            minor: '',
         },
         {
             school: 'UTS',
@@ -20,6 +21,7 @@ export default {
             graduationDate: '2026-02',
             degree: 'Bachelor',
             major: 'Architectural Design',
+            minor: '',
         },
     ],
     status: 0,

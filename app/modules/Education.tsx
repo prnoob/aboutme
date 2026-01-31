@@ -13,8 +13,17 @@ const Education = () => {
                 </div>
                 <div className="self-stretch flex-col justify-start items-start pt-2 flex pb-2">
                     {_map(data, (eduItem, index) => {
-                        const { school, schoolFull, startDate, college, graduationDate, logo, major, minor, degree } =
-                            eduItem || {}
+                        const {
+                            school,
+                            schoolFull,
+                            startDate,
+                            college,
+                            graduationDate,
+                            logo,
+                            major,
+                            minor = '',
+                            degree,
+                        } = eduItem || {}
                         const isPresent = !isValidDate(graduationDate)
                         const startDateFormatted = formatEnDateMY(startDate)
                         const graduationDateFormatted = isPresent ? `isPresent` : formatEnDateMY(graduationDate)
