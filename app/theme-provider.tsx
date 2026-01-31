@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import SwitchDark from './components/SwitchDark'
 export const ThemeContext = createContext({ dark: false })
@@ -8,9 +8,12 @@ const themeMode = {
     light: 'light',
     dark: 'dark',
 }
-export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+
+function ThemeProviderContent({ children }: { children: React.ReactNode }) {
     const [dark, setDark] = useState(false)
-    const mode = useSearchParams().get('mode')
+    const searchParams = useSearchParams()
+    const mode = searchParams.get('mode')
+
     useEffect(() => {
         if (mode == themeMode.dark) {
             setDark(true)
@@ -29,5 +32,13 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
             </div>
             <div className={`${dark ? 'dark bg-slate-800' : ''}`}>{children}</div>
         </ThemeContext.Provider>
+    )
+}
+
+export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+    return (
+        <Suspense fallback={<div className={`dark:bg-slate-800`}>{children}</div>}>
+            <ThemeProviderContent>{children}</ThemeProviderContent>
+        </Suspense>
     )
 }
