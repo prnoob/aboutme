@@ -146,6 +146,7 @@ const SocialsBlock = ({ socials }: { socials: typeof userInfo.data.socials }) =>
                 </div>
                 {_map(socials, (sItem, sIndex) => {
                     const { social, account, link, qrcode } = sItem || {}
+                    const socialStr = (social || '') as string
                     return (
                         <div
                             key={`userinfo_languages_${sIndex}`}
@@ -153,12 +154,12 @@ const SocialsBlock = ({ socials }: { socials: typeof userInfo.data.socials }) =>
                         >
                             <div className="w-6 h-6 bg-slate-200 rounded-full relative dark:bg-slate-600 dark:bg-opacity-90">
                                 <div className="w-5 h-5 absolute left-[0.125rem] top-[0.125rem]">
-                                    <FallbackImage src={`./commonicons/${social.toLowerCase()}.svg`} />
+                                    <FallbackImage src={`./commonicons/${socialStr.toLowerCase()}.svg`} />
                                 </div>
                             </div>
                             <div className="ml-1 grow shrink basis-0 flex-col justify-start items-start gap-0.5 inline-flex">
                                 <div className="self-stretch text-slate-500 text-xs font-normal leading-3 tracking-tight dark:text-gray-400">
-                                    {upperFirstLetter(social)}
+                                    {upperFirstLetter(socialStr)}
                                 </div>
                                 <div
                                     className={`self-stretch text-slate-600 text-xs font-medium leading-3 dark:text-gray-300`}
@@ -188,6 +189,8 @@ const LanguagesBlock = ({ languages }: { languages: typeof userInfo.data.languag
                 </div>
                 {_map(languages, (lItem, lIndex) => {
                     const { language, level } = lItem || {}
+                    const languageStr = (language || '') as string
+                    const levelStr = (level || '') as string
                     return (
                         <div
                             key={`userinfo_languages_${lIndex}`}
@@ -195,16 +198,16 @@ const LanguagesBlock = ({ languages }: { languages: typeof userInfo.data.languag
                         >
                             <div className="w-5 h-5 relative">
                                 <div className="w-5 h-5 absolute ">
-                                    <FallbackImage src={`./languages/${language.toLowerCase()}.svg`} />
+                                    <FallbackImage src={`./languages/${languageStr.toLowerCase()}.svg`} />
                                 </div>
                             </div>
                             <div className="ml-1 grow shrink basis-0 flex-col justify-start items-start gap-0.5 inline-flex">
                                 <div className="self-stretch text-slate-600 text-xs font-medium leading-3 dark:text-gray-300">
-                                    {upperFirstLetter(language)}
+                                    {upperFirstLetter(languageStr)}
                                 </div>
-                                {level ? (
+                                {levelStr ? (
                                     <div className="self-stretch text-slate-500 text-xs font-normal leading-3 tracking-tight dark:text-gray-400">
-                                        {upperFirstLetter(level)}
+                                        {upperFirstLetter(levelStr)}
                                     </div>
                                 ) : null}
                             </div>
@@ -226,6 +229,8 @@ const HobbiesInterestsBlock = ({ hobbies }: { hobbies: typeof userInfo.data.hobb
                 </div>
                 {_map(hobbies, (hItem, hIndex) => {
                     const { hobby, type } = hItem || {}
+                    const hobbyStr = (hobby || '') as string
+                    const typeStr = (type || '') as string
                     return (
                         <div
                             key={`userinfo_languages_${hIndex}`}
@@ -233,12 +238,12 @@ const HobbiesInterestsBlock = ({ hobbies }: { hobbies: typeof userInfo.data.hobb
                         >
                             <div className="w-5 h-5 relative">
                                 <div className="w-5 h-5 absolute ">
-                                    <FallbackImage src={`./commonicons/${type.toLowerCase()}.svg`} />
+                                    <FallbackImage src={`./commonicons/${typeStr.toLowerCase()}.svg`} />
                                 </div>
                             </div>
                             <div className="ml-[0.2rem] grow shrink basis-0 flex-col justify-start items-start">
                                 <div className="self-stretch text-slate-600 text-xs font-medium leading-3 relative top-[1px] dark:text-gray-300">
-                                    {upperFirstLetter(hobby)}
+                                    {upperFirstLetter(hobbyStr)}
                                 </div>
                             </div>
                         </div>
